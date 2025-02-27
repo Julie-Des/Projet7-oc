@@ -1,10 +1,9 @@
-
+import Banner from "../components/Banner"
 
 function Home() {
     return (
         <div>
-            <h1>Accueil</h1>
-            <p>voici ma page</p>
+            <Banner className="banner-home" title="Chez vous, partout et ailleurs"/>
         </div>
     )
 }

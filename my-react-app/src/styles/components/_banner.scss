@@ -1,0 +1,27 @@
+.banner {
+    @include margin-side;
+    border: 1px;
+    border-radius: 25px;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    margin-bottom: 20px;
+    height: 223px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    h1 {
+        color: $white;
+        font-size: 48px;
+        font-weight: 700;
+    }
+}
+
+.banner-home {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+    url(../assets/img_banner-home.png) center/cover;
+}
+
+.banner-about {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 
+    url(../assets/img_banner-about.png) center/cover;
+}

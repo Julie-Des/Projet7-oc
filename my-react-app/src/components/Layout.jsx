@@ -12,7 +12,7 @@ function Layout() {
       </header>
 
       <main>
-        <Outlet /> {/* C'est ici que les pages s'affichent */}
+        <Outlet />
       </main>
 
       <footer>
