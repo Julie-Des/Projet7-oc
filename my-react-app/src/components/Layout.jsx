@@ -4,6 +4,7 @@ function Layout() {
   return (
     <>
       <header>
+        <img src="./logo_kasa.png" alt="logo Kasa" />
         <nav>
           <NavLink to="/" className={(nav => nav.isActive ? "nav-active" : "")}>Accueil</NavLink>
           <NavLink to="/about" className={(nav => nav.isActive ? "nav-active" : "")}>À propos</NavLink>
@@ -14,7 +15,11 @@ function Layout() {
         <Outlet /> {/* C'est ici que les pages s'affichent */}
       </main>
 
-      <footer>© 2025 - Mon site</footer>
+      <footer>
+        <img src="./logo_kasa_footer.png" alt="logo Kasa" />
+        <p>© 2020 Kasa. All rights reserved</p>
+        
+      </footer>
     </>
   );
 }

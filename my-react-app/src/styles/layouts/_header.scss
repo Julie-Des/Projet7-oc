@@ -1,0 +1,21 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include padding-side;
+    padding-top: 50px;
+    padding-bottom: 50px;
+        nav {
+            width: 50%;
+            font-size: 24px;
+            text-align: right;
+                a {
+                    padding-left: 35px;
+                }
+                .nav-active {
+                    text-decoration: underline;
+                }
+            
+        }
+        
+}
