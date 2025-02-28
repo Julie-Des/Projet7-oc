@@ -1,0 +1,41 @@
+.collapse {
+    display: flex;
+    flex-direction: column;
+    margin: 0 100px 35px;
+    justify-content: center;
+    align-items: center;
+
+    .collapse-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: $red;
+        width: 100%;
+        border-radius: 5px;
+        h2 {
+            color: $white;
+            font-weight: 700;
+            font-size: 24px;
+            padding: 15px;
+        }
+        .arrow {
+            width: 24px;
+            height: 13.71px;
+            cursor: pointer;
+            padding: 15px;
+            transition: transform 0.3s ease;
+            transform: rotate(0deg);
+        }
+
+        .arrow.open {
+            transform: rotate(180deg);
+        }
+    }
+
+    .collapse-content {
+        font-size: 18px;
+        padding: 20px;
+        background-color: $grey-collapse;
+        border-radius: 0 0 5px 5px;
+    }
+}
