@@ -1,17 +1,19 @@
 .collapse {
     display: flex;
     flex-direction: column;
-    margin: 0 100px 35px;
+    margin: 0 auto 35px;
+    padding: 0 100px;
     justify-content: center;
     align-items: center;
+    max-width: 1023px;
 
     .collapse-header {
         display: flex;
         justify-content: space-between;
         align-items: center;
         background-color: $red;
-        width: 100%;
         border-radius: 5px;
+        width: 100%;
         h2 {
             color: $white;
             font-weight: 700;
@@ -35,6 +37,7 @@
     .collapse-content {
         font-size: 18px;
         padding: 20px;
+        line-height: 25.67px;
         background-color: $grey-collapse;
         border-radius: 0 0 5px 5px;
     }
