@@ -18,7 +18,6 @@ function Layout() {
       <footer>
         <img src="./logo_kasa_footer.png" alt="logo Kasa" />
         <p>© 2020 Kasa. All rights reserved</p>
-        
       </footer>
     </>
   );

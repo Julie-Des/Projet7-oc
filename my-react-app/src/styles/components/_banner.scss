@@ -2,7 +2,6 @@
     @include margin-side;
     border: 1px;
     border-radius: 25px;
-    box-shadow: 0px 4px 4px 0px #00000040;
     margin-bottom: 20px;
     height: 223px;
     display: flex;
@@ -19,6 +18,7 @@
 .banner-home {
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
     url(../assets/img_banner-home.png) center/cover;
+    box-shadow: 0px 4px 4px 0px #00000040;
 }
 
 .banner-about {
