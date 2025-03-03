@@ -7,7 +7,7 @@ function Layout() {
         <img src="./logo_kasa.png" alt="logo Kasa" />
         <nav>
           <NavLink to="/" className={(nav => nav.isActive ? "nav-active" : "")}>Accueil</NavLink>
-          <NavLink to="/about" className={(nav => nav.isActive ? "nav-active" : "")}>À propos</NavLink>
+          <NavLink to="/about" className={(nav => nav.isActive ? "nav-active" : "")}>À Propos</NavLink>
         </nav>
       </header>
 

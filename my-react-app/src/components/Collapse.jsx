@@ -11,11 +11,11 @@ function Collapse({ title, children }) {
           <img 
             src={arrowIcon} 
             alt="Flèche"
-            className={`arrow ${isOpen ? "open" : ""}`} 
+            className={`arrow ${isOpen ? "open" : "close"}`} 
             onClick={() => setIsOpen(!isOpen)}
           />
         </div>
-        {isOpen && <div className="collapse-content">{children}</div>}
+        <div className={`collapse-content ${isOpen ? "open" : "close"}`}>{children}</div>
       </div>
     );
   }

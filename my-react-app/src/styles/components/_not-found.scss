@@ -1,0 +1,22 @@
+.not-found {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h1 {
+        color: $red;
+        font-size: 288px;
+        font-weight: 700;
+        margin-bottom: 100px;
+        margin-top: 40px;
+    }
+    p {
+        color: $red;
+        font-size: 36px;
+    }
+    a {
+        font-size: 18px;
+        margin-top: 150px;
+        margin-bottom: 150px;
+        text-decoration: underline;
+    }
+}

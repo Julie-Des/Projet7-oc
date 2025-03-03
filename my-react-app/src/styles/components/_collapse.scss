@@ -14,6 +14,7 @@
         background-color: $red;
         border-radius: 5px;
         width: 100%;
+        z-index: 10;
         h2 {
             color: $white;
             font-weight: 700;
@@ -35,10 +36,41 @@
     }
 
     .collapse-content {
-        font-size: 18px;
         padding: 20px;
         line-height: 25.67px;
         background-color: $grey-collapse;
         border-radius: 0 0 5px 5px;
+        p {
+            font-size: 18px;
+            font-weight: 400;
+        }
+    }
+
+    .collapse-content.open {
+        animation: slideDown 0.6s ease-out forwards;
+        display: flex;
+    }
+
+    .collapse-content.close {
+        animation: slideUp 0.6s ease-out forwards;
+        display: none;
+    }
+}
+
+@keyframes slideDown {
+    0% {
+        transform: translateY(-50px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-50px);
     }
 }
