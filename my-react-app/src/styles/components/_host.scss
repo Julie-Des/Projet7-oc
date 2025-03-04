@@ -1,0 +1,18 @@
+.host {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 30px;
+    .host-name {
+        color: $red;
+        font-size: 18px;
+        width: 93px;
+        text-align: right;
+    }
+    .host-picture {
+        border-radius: 50%;
+        width: 64px;
+        height: 64px;
+    }
+}
+
