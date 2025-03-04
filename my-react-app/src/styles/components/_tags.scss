@@ -1,0 +1,12 @@
+.tags {
+    display: flex;
+    gap: 10px;
+    li {
+        color: $white;
+        background-color: $red;
+        border-radius: 10px;
+        font-size: 14px;
+        font-weight: 700;
+        padding: 7px 35px;
+    }
+}
