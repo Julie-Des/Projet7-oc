@@ -1,5 +1,12 @@
 .apartment {
+    display: flex;
+    flex-direction: column;
     @include margin-side;
+    box-sizing: border-box;
+}
+
+
+.apartment-informations {
     display: flex;
     justify-content: space-between;
     .apartment-title {

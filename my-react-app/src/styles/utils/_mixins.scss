@@ -2,3 +2,12 @@
     margin-left: 100px;
     margin-right: 100px;
 }
+
+@mixin arrows-slideshow {
+    position: absolute;
+    top: 46%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 10;
+    padding: 20px;
+}
