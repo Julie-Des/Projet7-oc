@@ -4,6 +4,8 @@ import Slideshow from "../components/Slideshow";
 import Tags from "../components/Tags";
 import Host from "../components/Host";
 import Rating from "../components/Rating";
+import Collapse from "../components/Collapse";
+import Equipments from "../components/Equipments";
 
 function Apartment() {
     const { id } = useParams()
@@ -26,6 +28,14 @@ function Apartment() {
                     <Host name={apartment.host.name} picture={apartment.host.picture} />
                     <Rating rating={apartment.rating} />
                 </div>
+            </div>
+            <div className="collapse-apartment">
+                <Collapse title="Description">
+                <p>{apartment.description}</p>
+                </Collapse>
+                <Collapse title="Équipements">
+                <Equipments equipments={apartment.equipments} />
+                </Collapse>
             </div>
         </div>   
     )

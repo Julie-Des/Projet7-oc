@@ -1,60 +1,73 @@
-.collapse {
+.collapse-about {
     display: flex;
     flex-direction: column;
-    margin: 0 auto 35px;
-    padding: 0 100px;
+    margin: 0 auto;
     justify-content: center;
     align-items: center;
     max-width: 1023px;
+}
 
-    .collapse-header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background-color: $red;
-        border-radius: 5px;
-        width: 100%;
-        z-index: 10;
-        h2 {
-            color: $white;
-            font-weight: 700;
-            font-size: 24px;
-            padding: 15px;
-        }
-        .arrow {
-            width: 24px;
-            height: 13.71px;
-            cursor: pointer;
-            padding: 15px;
-            transition: transform 0.3s ease;
-            transform: rotate(0deg);
-        }
+.collapse-apartment {
+    display: flex;
+    gap: 50px;
+    li {
+        font-size: 18px;
+        font-weight: 400
+    }
+}
 
-        .arrow.open {
-            transform: rotate(180deg);
-        }
+.collapse {
+    width: 100%;
+    margin-bottom: 35px;
+}
+
+.collapse-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $red;
+    border-radius: 5px;
+    width: 100%;
+    z-index: 10;
+    h2 {
+        color: $white;
+        font-weight: 700;
+        font-size: 24px;
+        padding: 15px;
+    }
+    .arrow {
+        width: 24px;
+        height: 13.71px;
+        cursor: pointer;
+        padding: 15px;
+        transition: transform 0.3s ease;
+        transform: rotate(0deg);
     }
 
-    .collapse-content {
-        padding: 20px;
-        line-height: 25.67px;
-        background-color: $grey-collapse;
-        border-radius: 0 0 5px 5px;
-        p {
-            font-size: 18px;
-            font-weight: 400;
-        }
+    .arrow.open {
+        transform: rotate(180deg);
     }
+}
 
-    .collapse-content.open {
-        animation: slideDown 0.6s ease-out forwards;
-        display: flex;
+.collapse-content {
+    padding: 20px;
+    line-height: 25.67px;
+    background-color: $grey-collapse;
+    border-radius: 0 0 5px 5px;
+    p {
+        font-size: 18px;
+        font-weight: 400;
     }
+}
 
-    .collapse-content.close {
-        animation: slideUp 0.6s ease-out forwards;
-        display: none;
-    }
+.collapse-content.open {
+    animation: slideDown 0.3s ease-out forwards;
+    display: flex;
+}
+
+.collapse-content.close {
+    animation: slideUp 0.3s ease-out forwards;
+    display: none;
 }
 
 @keyframes slideDown {
