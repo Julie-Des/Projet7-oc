@@ -1,4 +1,17 @@
 .rating {
     display: flex;
     gap: 15px;
+    align-items: center;
+    justify-content: flex-end;
+
+    @include media-mobile {
+        gap: 7px;
+        justify-content: flex-start;
+    }
+
+    img {
+        @include media-mobile {
+            width: 10%;
+        }
+    }
 }

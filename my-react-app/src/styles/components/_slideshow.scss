@@ -1,6 +1,11 @@
 .slideshow {
     position: relative;
-    margin-bottom: 40px;
+    margin-bottom: 25px;
+    box-sizing: border-box;
+
+    @include media-mobile {
+        margin-bottom: 15px;
+    }
     
    .slideshow-image {
         max-height: 415px;
@@ -11,6 +16,10 @@
         top: 0;
         left: 0;
         opacity: 0;
+
+        @include media-mobile {
+            max-height: 255px;
+        }
     }
 
     .slideshow-image.active {
@@ -19,12 +28,20 @@
         position: relative;
     }
 
-    .arrow-left {
+    .arrow-left, .arrow-right {
         @include position-arrows-slideshow;
+
+        @include media-tablet {
+            width: 4%;
+        }
+
+        @include media-mobile {
+            width: 2.2%;
+            padding: 5px;
+        }
     }
 
     .arrow-right {
-        @include position-arrows-slideshow;
         right: 0;
     }
 
@@ -35,7 +52,12 @@
         bottom: 30px;
         color: $white;
         font-size: 18px;
+
+        @include media-mobile {
+            display: none;
+        }
     }
+
 }
 
 @keyframes fadeIn {

@@ -1,13 +1,29 @@
 .tags {
     display: flex;
     gap: 10px;
-    margin-bottom: 25px;
+    flex-wrap: wrap;
+
     li {
         color: $white;
         background-color: $red;
         border-radius: 10px;
         font-size: 14px;
         font-weight: 700;
-        padding: 7px 35px;
+        padding: 5px 35px;
+
+        @include media-tablet {
+            font-size: 12px;
+            padding: 5px 20px;
+        }
+
+        @include media-mobile {
+            font-size: 10px;
+            padding: 5px 15px;;
+        }
+
+        @include media-small-mobile {
+            font-size: 8px;
+            padding: 5px 10px;
+        }
     }
 }

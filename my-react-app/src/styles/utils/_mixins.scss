@@ -8,6 +8,11 @@
     margin-right: 50px;
 }
 
+@mixin margin-side-mobile {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
 @mixin position-arrows-slideshow {
     position: absolute;
     top: 46%;

@@ -40,8 +40,7 @@
     }
 
     @include media-mobile {
-        margin-left: 20px;
-        margin-right: 20px;
+        @include margin-side-mobile;
         height: 111px;
         margin-bottom: 20px;
      }
