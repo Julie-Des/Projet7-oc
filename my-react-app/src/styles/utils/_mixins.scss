@@ -3,12 +3,12 @@
     margin-right: 100px;
 }
 
-@mixin margin-side-desktop {
+@mixin margin-side-tablet {
     margin-left: 50px;
     margin-right: 50px;
 }
 
-@mixin arrows-slideshow {
+@mixin position-arrows-slideshow {
     position: absolute;
     top: 46%;
     transform: translateY(-50%);
@@ -20,7 +20,7 @@
 
 // Responsive :
 @mixin media-small-mobile {
-    @media (max-width:375px) {@content;}
+    @media (max-width:337px) {@content;}
 }
 
 @mixin media-mobile {
@@ -29,8 +29,4 @@
 
 @mixin media-tablet {
     @media (max-width:1024px) {@content;}
-}
-
-@mixin media-desktop-large {
-    @media (max-width:1440px) {@content;}
 }

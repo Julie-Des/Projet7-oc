@@ -3,10 +3,29 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 50px;
-    padding-bottom: 25px;
-    gap: 38px;
+    justify-content: center;
+    gap: 40px;
+    height: 209px;
+
+    @include media-mobile {
+        gap: 15px;
+    }
+
+    img {
+        padding-top: 50px;
+        
+        @include media-mobile {
+            padding-top: 0;
+        }
+    }
+
     p {
         color: $white;
+        font-size: 24px;
+        @include media-mobile {
+            display: flex;
+            flex-direction: column;
+            font-size: 12px;
+            }
     }
 }

@@ -32,19 +32,18 @@
         @include media-mobile {
             display: block;
             text-align: left;
-        }
-        
+        }  
     }
 
     @include media-tablet {
-        margin-left: 50px;
-        margin-right: 50px;
+        @include margin-side-tablet;
     }
 
     @include media-mobile {
         margin-left: 20px;
         margin-right: 20px;
         height: 111px;
+        margin-bottom: 20px;
      }
 }
 

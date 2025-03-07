@@ -20,11 +20,11 @@
     }
 
     .arrow-left {
-        @include arrows-slideshow;
+        @include position-arrows-slideshow;
     }
 
     .arrow-right {
-        @include arrows-slideshow;
+        @include position-arrows-slideshow;
         right: 0;
     }
 
