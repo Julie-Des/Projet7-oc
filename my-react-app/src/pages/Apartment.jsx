@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import apartmentsDatas from "../datas/apartmentsDatas.json"  with { type: "json" }
 import Slideshow from "../components/Slideshow";
 import Tags from "../components/Tags";
@@ -6,14 +6,20 @@ import Host from "../components/Host";
 import Rating from "../components/Rating";
 import Collapse from "../components/Collapse";
 import Equipments from "../components/Equipments";
+import { useEffect } from "react";
 
 function Apartment() {
     const { id } = useParams()
+    const navigate = useNavigate()
     const apartment = apartmentsDatas.find(apartment => apartment.id === id);
 
-    if (!apartment) {
-        return <h2 className="apartment-not-found">Logement non trouvé</h2>
-    }
+    useEffect(() => {
+        if (!apartment) {
+            navigate("/")
+        }
+    }, [apartment, navigate])
+
+    if (!apartment) return null
 
     return (
         <div className="apartment">  

@@ -6,7 +6,9 @@ function Layout() {
   return (
     <>
       <header>
-        <img src={logoKasaHeader} alt="logo Kasa" />
+          <NavLink to="/">
+            <img src={logoKasaHeader} alt="logo Kasa" />
+          </NavLink>
         <nav>
           <NavLink to="/" className={(nav => nav.isActive ? "nav-active" : "")}>Accueil</NavLink>
           <NavLink to="/about" className={(nav => nav.isActive ? "nav-active" : "")}>À Propos</NavLink>
