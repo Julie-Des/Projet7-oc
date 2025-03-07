@@ -3,6 +3,11 @@
     margin-right: 100px;
 }
 
+@mixin margin-side-desktop {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
 @mixin arrows-slideshow {
     position: absolute;
     top: 46%;
@@ -10,4 +15,22 @@
     cursor: pointer;
     z-index: 10;
     padding: 20px;
+}
+
+
+// Responsive :
+@mixin media-small-mobile {
+    @media (max-width:375px) {@content;}
+}
+
+@mixin media-mobile {
+    @media (max-width:767px) {@content;}
+}
+
+@mixin media-tablet {
+    @media (max-width:1024px) {@content;}
+}
+
+@mixin media-desktop-large {
+    @media (max-width:1440px) {@content;}
 }

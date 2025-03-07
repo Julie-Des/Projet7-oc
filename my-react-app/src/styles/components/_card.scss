@@ -23,4 +23,8 @@
         padding-right: 20px;
         line-height: 25.67px;
     }
+
+    @include media-tablet {
+        height: 255px;
+    }
 }
