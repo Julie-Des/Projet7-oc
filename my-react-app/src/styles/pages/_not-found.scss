@@ -5,42 +5,42 @@
     text-align: center;
 
     h1 {
-        @include size-weight(288px, 700);
+        @include size-weight(18rem, 700);
         color: $red;
         margin-bottom: 50px;
 
         @include media-tablet {
-            font-size: 180px;
+            font-size: 11.25rem;
         }
 
         @include media-mobile {
-            font-size: 96px;
+            font-size: 6rem;
             margin-top: 20px;
         }
     }
 
     p {
-        @include color-font-size($red, 36px);
+        @include color-font-size($red, 2.25rem);
         line-height: $line-height;
 
         @include media-tablet {
-            font-size: 24px;
+            font-size: 1.25rem;
         }
 
         @include media-mobile {
             @include flex-column;
-            font-size: 18px;
+            font-size: 1.125rem;
         }
     }
 
     a {
         @include margin-top-bottom(150px, 150px);
-        font-size: 18px;
+        font-size: 1.125rem;
         text-decoration: underline;
 
         @include media-mobile {
             @include margin-top-bottom(120px, 120px);
-            font-size: 14px;
+            font-size: 0.875rem;
         }
     }
 }

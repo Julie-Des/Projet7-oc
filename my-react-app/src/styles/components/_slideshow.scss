@@ -46,7 +46,7 @@
     }
 
     .numbering {
-        @include color-font-size($white, 18px);
+        @include color-font-size($white, 1.125rem);
         @include position-absolute-bottom-left(30px, 50%);
         transform: translateX(-50%);
 

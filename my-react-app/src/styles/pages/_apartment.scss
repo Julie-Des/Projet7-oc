@@ -22,19 +22,19 @@
     }
 
     .apartment-title {
-        @include color-font-size($red, 36px);
+        @include color-font-size($red, 2.25rem);
         margin-bottom: 10px;
 
         @include media-mobile {
-            font-size: 18px;
+            font-size: 1.125rem;
         }
     }
     .apartment-location {
-        font-size: 18px;
+        font-size: 1.125rem;
         margin-bottom: 20px;
 
         @include media-mobile {
-            font-size: 14px;
+            font-size: 0.875rem;
         }
     }
 

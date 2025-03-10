@@ -7,15 +7,15 @@
     display: flex;
     
     h1, .mobile-break {
-        @include size-weight(48px, 700);
+        @include size-weight(3rem, 700);
         color: $white;
 
         @include media-tablet {
-            font-size: 32px;
+            font-size: 2rem;
         }
 
         @include media-mobile {
-            font-size: 24px;
+            font-size: 1.5rem;
          }
     }
 

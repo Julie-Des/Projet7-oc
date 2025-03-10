@@ -17,10 +17,10 @@
         border-radius: 5px;
 
         h2 {
-            @include h2-collapse(24px);
+            @include h2-collapse(1.5rem);
 
             @include media-tablet {
-                font-size: 18px;
+                font-size: 1.125rem;
             }
         }
     }
@@ -38,20 +38,20 @@
         border-radius: 10px;
 
         h2 {
-            @include h2-collapse(18px);
+            @include h2-collapse(1.125rem);
 
             @include media-mobile {
-                font-size: 13px;
+                font-size: 0.813rem;
             }
         }
     }
 
 
     li {
-        @include size-weight(18px, 400);
+        @include size-weight(1.125rem, 400);
 
         @include media-mobile {
-            font-size: 12px;
+            font-size: 0.75rem;
         }
     }
 }
@@ -102,10 +102,10 @@
     }
 
     p {
-        @include size-weight(18px, 400);
+        @include size-weight(1.125rem, 400);
 
         @include media-mobile {
-            font-size: 12px;
+            font-size: 0.75rem;
         }
     }
 }

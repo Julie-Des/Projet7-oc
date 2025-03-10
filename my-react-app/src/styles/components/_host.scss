@@ -9,12 +9,12 @@
     }
 
     .host-name {
-        @include color-font-size($red, 18px);
+        @include color-font-size($red, 1.125rem);
         width: 50%;
         text-align: right;
 
         @include media-mobile {
-            font-size: 12px;
+            font-size: 0.75rem;
         }
     }
     .host-picture {

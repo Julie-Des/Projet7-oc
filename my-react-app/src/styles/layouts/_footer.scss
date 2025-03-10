@@ -18,11 +18,11 @@ footer {
     }
 
     p {
-        @include color-font-size($white, 24px);
+        @include color-font-size($white, 1.5rem);
 
         @include media-mobile {
             @include flex-column;
-            font-size: 12px;
+            font-size: 0.75rem;
         }
     }
 }
