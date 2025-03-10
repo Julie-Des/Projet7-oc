@@ -1,7 +1,6 @@
 .host {
-    display: flex;
+    @include flex-justify-content(flex-end);
     align-items: center;
-    justify-content: flex-end;
     gap: 10px;
     margin-bottom: 30px;
 
@@ -10,8 +9,7 @@
     }
 
     .host-name {
-        color: $red;
-        font-size: 18px;
+        @include color-font-size($red, 18px);
         width: 50%;
         text-align: right;
 
@@ -20,13 +18,11 @@
         }
     }
     .host-picture {
+        @include width-height(64px, 64px);
         border-radius: 50%;
-        width: 64px;
-        height: 64px;
 
         @include media-mobile {
-            width: 32px;
-            height: 32px;
+            @include width-height(32px, 32px);
         }
     }
 }

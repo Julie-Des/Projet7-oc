@@ -1,8 +1,7 @@
 header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    @include flex-justify-content(space-between);
     @include margin-side;
+    align-items: center;
     padding: 50px 0 50px;
 
     @include media-tablet {
@@ -14,15 +13,19 @@ header {
         padding: 20px 0 20px;
     }
 
+    a {
+        @include media-small-mobile {
+            max-width: 145px;
+        }
+    }
+
     img {
         @include media-mobile {
-            width: 145px;
-            height: 46.88px;
+            @include width-height(145px, 46.88px);
         }
 
         @include media-small-mobile {
-            width: calc(145px - 10%);
-            height: calc(46.88px - 10%);
+            @include width-height(calc(145px - 20%), calc(46.88px - 20%));
         }
     }
 

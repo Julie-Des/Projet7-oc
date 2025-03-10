@@ -1,17 +1,14 @@
 .banner {
     @include margin-side;
+    @include childcenter;
+    @include height-margin-bottom(223px, 40px);
     border: 1px;
     border-radius: 25px;
-    margin-bottom: 40px;
-    height: 223px;
     display: flex;
-    justify-content: center;
-    align-items: center;
     
     h1, .mobile-break {
+        @include size-weight(48px, 700);
         color: $white;
-        font-size: 48px;
-        font-weight: 700;
 
         @include media-tablet {
             font-size: 32px;
@@ -41,8 +38,7 @@
 
     @include media-mobile {
         @include margin-side-mobile;
-        height: 111px;
-        margin-bottom: 20px;
+        @include height-margin-bottom(111px, 20px);
      }
 }
 

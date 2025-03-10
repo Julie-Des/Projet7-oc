@@ -46,12 +46,9 @@
     }
 
     .numbering {
-        position: absolute;
-        left: 50%;
+        @include color-font-size($white, 18px);
+        @include position-absolute-bottom-left(30px, 50%);
         transform: translateX(-50%);
-        bottom: 30px;
-        color: $white;
-        font-size: 18px;
 
         @include media-mobile {
             display: none;

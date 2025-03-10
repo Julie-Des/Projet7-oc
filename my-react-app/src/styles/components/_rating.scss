@@ -1,8 +1,7 @@
 .rating {
-    display: flex;
+    @include flex-justify-content(flex-end);
     gap: 15px;
     align-items: center;
-    justify-content: flex-end;
 
     @include media-mobile {
         gap: 7px;

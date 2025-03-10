@@ -4,26 +4,20 @@
     flex-wrap: wrap;
 
     li {
+        @include size-weight(14px, 700);
+        @include background-color-border-radius-padding($red, 10px,5px 35px);
         color: $white;
-        background-color: $red;
-        border-radius: 10px;
-        font-size: 14px;
-        font-weight: 700;
-        padding: 5px 35px;
 
         @include media-tablet {
-            font-size: 12px;
-            padding: 5px 20px;
+            @include font-size-padding(12px, 5px 20px);
         }
 
         @include media-mobile {
-            font-size: 10px;
-            padding: 5px 15px;;
+            @include font-size-padding(10px, 5px 15px);
         }
 
         @include media-small-mobile {
-            font-size: 8px;
-            padding: 5px 10px;
+            @include font-size-padding(8px, 5px 10px);
         }
     }
 }

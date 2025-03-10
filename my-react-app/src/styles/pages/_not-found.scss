@@ -1,14 +1,12 @@
 .not-found {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    @include childcenter;
+    @include flex-column;
     padding: 0 50px;
     text-align: center;
+
     h1 {
+        @include size-weight(288px, 700);
         color: $red;
-        font-size: 288px;
-        font-weight: 700;
         margin-bottom: 50px;
 
         @include media-tablet {
@@ -20,31 +18,29 @@
             margin-top: 20px;
         }
     }
+
     p {
-        color: $red;
-        font-size: 36px;
-        line-height: 143%;
+        @include color-font-size($red, 36px);
+        line-height: $line-height;
 
         @include media-tablet {
             font-size: 24px;
         }
 
         @include media-mobile {
+            @include flex-column;
             font-size: 18px;
-            display: flex;
-            flex-direction: column;
         }
     }
+
     a {
+        @include margin-top-bottom(150px, 150px);
         font-size: 18px;
-        margin-top: 150px;
-        margin-bottom: 150px;
         text-decoration: underline;
 
         @include media-mobile {
+            @include margin-top-bottom(120px, 120px);
             font-size: 14px;
-            margin-top: 120px;
-            margin-bottom: 120px;
         }
     }
 }
