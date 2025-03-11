@@ -1,5 +1,5 @@
-import starRed from "../assets/star-red.png"; // Import de l'image étoile rouge
-import starGrey from "../assets/star-grey.png"; // Import de l'image étoile grise
+import starRed from "../assets/star-red.png"
+import starGrey from "../assets/star-grey.png"
 
 function Rating({ rating }) {
     const maxStars = 5
