@@ -1,6 +1,6 @@
 function Equipments({ equipments }) {
 	return (
-		<ul className="equipments">
+	    <ul className="equipments">
 			{equipments.map((equipment, id) => (
 				<li key={id} className="equipment">
 					{equipment}
