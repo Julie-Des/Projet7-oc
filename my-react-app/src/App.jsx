@@ -6,8 +6,7 @@ function App() {
     <BrowserRouter>
       <AppRouter />
     </BrowserRouter>
-  )
-        
+  )     
 }
 
 export default App
