@@ -9,10 +9,10 @@ This project is part of the Web Integrator training course – OpenClassrooms.
 
 - **Browse Apartments:** View a list of available apartments with key details.
 - **Detailed Apartment View:** Access comprehensive information about each apartment, including images, description, equipment, and host details.
-- **Dynamic Routing:**  Navigate between different apartments using dynamic routes.
+- **Dynamic Routing:** Navigate between different apartments using dynamic routes.
 - **About Page:** Learn about Kasa's values and commitments.
-- **Error Handling:**  Display a "Not Found" page for invalid routes.
-- **Responsive Design:**  The application is designed to be responsive and work well on different screen sizes.
+- **Error Handling:** Display a "Not Found" page for invalid routes.
+- **Responsive Design:** The application is designed to be responsive and work well on different screen sizes.
 - **Collapsible Sections:** Utilizes collapsible sections for displaying detailed information in a user-friendly manner.
 - **Image Slideshow:** Showcases apartment images in an interactive slideshow.
 - **Rating Display:** Visually represents apartment ratings using stars.
@@ -27,17 +27,16 @@ This project is part of the Web Integrator training course – OpenClassrooms.
 - Implement CSS animations for a pleasant and modern user experience.
 - Consume data from a JSON file to dynamically display accommodations.
 
-
 ## 🛠️ Tech Stack
 
 - **Frontend:**
-    - React: JavaScript library for building user interfaces
-    - React Router DOM: For handling client-side routing
-    - SCSS: CSS preprocessor for styling
+  - React: JavaScript library for building user interfaces
+  - React Router DOM: For handling client-side routing
+  - SCSS: CSS preprocessor for styling
 - **Build Tools:**
-    - Vite:  Fast build tool and development server
+  - Vite: Fast build tool and development server
 - **Other:**
-    - JSON:  Data format for storing apartment information
+  - JSON: Data format for storing apartment information
 
 ## 📦 Getting Started
 
