@@ -55,13 +55,7 @@ These instructions will get you a copy of the project up and running on your loc
     git clone https://github.com/Julie-Des/Projet7-oc
     ```
 
-2.  Navigate to the project directory:
-
-    ```bash
-    cd my-react-app
-    ```
-
-3.  Install dependencies:
+2.  Install dependencies:
 
     ```bash
     npm install
@@ -89,7 +83,6 @@ https://projet7-oc-deshayes-projects.vercel.app/
 ## 💻 Project Structure
 
 ```
-my-react-app/
 ├── src/
 │   ├── components/
 │   │   ├── Banner.jsx
@@ -130,6 +123,10 @@ my-react-app/
 ## 📬 Contact
 
 Deshayes Julie - julie.deshayes14@gmail.com
+
+## 📝 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## 💖 Thanks
 
