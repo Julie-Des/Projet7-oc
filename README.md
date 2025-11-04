@@ -1,42 +1,76 @@
 # Kasa : Creation of a real estate rental web application 🏡
 
+## 🎯 Project Objective
+
 The goal of this project is to create a real estate rental web application in React, using Figma mockups and simulated JSON data.
 The application allows the user to navigate between different pages and explore properties via a fluid and responsive interface.
 
 This project is part of the Web Integrator training course – OpenClassrooms.
 
-## 🚀 Key Features
+---
 
-- **Browse Apartments:** View a list of available apartments with key details.
-- **Detailed Apartment View:** Access comprehensive information about each apartment, including images, description, equipment, and host details.
-- **Dynamic Routing:** Navigate between different apartments using dynamic routes.
-- **About Page:** Learn about Kasa's values and commitments.
-- **Error Handling:** Display a "Not Found" page for invalid routes.
-- **Responsive Design:** The application is designed to be responsive and work well on different screen sizes.
-- **Collapsible Sections:** Utilizes collapsible sections for displaying detailed information in a user-friendly manner.
-- **Image Slideshow:** Showcases apartment images in an interactive slideshow.
-- **Rating Display:** Visually represents apartment ratings using stars.
-- **Tag Display:** Displays relevant tags for each apartment.
+## 🧠 Skills Developed
 
-## 🧠 Skills developed
+- **React Fundamentals** – Creating reusable components, managing props and state, and structuring a scalable React application.  
+- **Routing with React Router** – Implementing client-side navigation for multiple pages (Home, About, Apartment, and Error pages).  
+- **Component Architecture** – Designing a modular component structure to ensure maintainability and readability of the codebase.  
+- **Dynamic Data Rendering** – Fetching and displaying housing data from a local JSON file to simulate API responses.  
+- **Sass Integration** – Writing clean, modular, and maintainable styles using Sass (SCSS syntax).  
+- **CSS Animations** – Enhancing user experience with subtle animations on collapsible sections and image transitions.  
+- **Error Handling** – Managing invalid routes and missing apartment data through custom error pages.  
+- **Responsive Web Design** – Developing a mobile-first responsive layout to ensure an optimal experience on all screen sizes.  
+- **Code Quality and Standards** – Following Kasa’s coding guidelines and best practices for clean, maintainable React projects.
 
-- Initialize an application with Vite to benefit from a fast and lightweight React environment.
-- Configure page navigation with React Router.
-- Develop reusable and structured components with React.
-- Styling with Sass (SCSS) for better organization of CSS code.
-- Implement CSS animations for a pleasant and modern user experience.
-- Consume data from a JSON file to dynamically display accommodations.
+---
 
-## 🛠️ Tech Stack
+## ⚙️ Technical Stack
 
-- **Frontend:**
-  - React: JavaScript library for building user interfaces
-  - React Router DOM: For handling client-side routing
-  - SCSS: CSS preprocessor for styling
-- **Build Tools:**
-  - Vite: Fast build tool and development server
-- **Other:**
-  - JSON: Data format for storing apartment information
+- **Languages:** JavaScript (ES6+), HTML5, Sass (SCSS syntax)  
+- **Framework:** React (with Vite)  
+- **Routing:** React Router  
+- **Data Source:** Local JSON file (mock data)  
+- **Tools:** Visual Studio Code, Node.js, npm, Git, GitHub  
+- **Design Reference:** Figma mockups and interactive prototypes  
+- **Version Control:** Git / GitHub  
+ 
+---
+
+## 🚀 Features Implemented
+
+### 🏠 Home Page
+- Displays a list of real estate listings with cover images and titles.  
+- Data dynamically fetched from a local JSON file.  
+- Clicking on a listing redirects to its dedicated apartment details page.
+
+### 🏡 Apartment Details Page
+- Displays full information for each apartment, including title, location, description, rating, and host profile.  
+- Integration of **dynamic routing** using the apartment’s ID.  
+- Error page displayed when accessing a non-existent apartment.  
+
+### 🖼️ Image Gallery
+- Interactive slideshow for apartment images with navigation arrows.  
+- Infinite loop functionality:  
+  - Clicking “next” on the last image displays the first one.  
+  - Clicking “previous” on the first image displays the last one.  
+- Navigation arrows and image counter hidden if there’s only one image.  
+- Gallery maintains consistent height based on the Figma mockups.  
+
+### 🔽 Collapsible Sections (Collapse)
+- Used to display additional details such as apartment description and equipment list.  
+- Closed by default and toggleable by clicking on the section header.  
+- Smooth opening and closing animations for better UX.  
+
+### 🧭 Navigation & Routing
+- **React Router** implemented for page navigation (Home, About, Apartment, 404).  
+- 404 page displayed for invalid routes or missing data.  
+- Seamless transitions between pages without reloading.  
+
+### 💫 Responsive Design & UI
+- Fully responsive layout following Figma mobile-first mockups.  
+- Consistent and optimized visual experience across all devices.  
+- Clean and minimalist design, faithful to Kasa’s branding.  
+
+---
 
 ## 📦 Getting Started
 
@@ -75,10 +109,14 @@ These instructions will get you a copy of the project up and running on your loc
 
 2.  Open your browser and navigate to `http://localhost:5173` (or the port specified by Vite).
 
+---
+
 ## 🌍 Deployment
 
 The project is deployed on Vercel:
 https://projet7-oc-deshayes-projects.vercel.app/
+
+---
 
 ## 💻 Project Structure
 
@@ -120,13 +158,19 @@ https://projet7-oc-deshayes-projects.vercel.app/
 
 ```
 
+---
+
 ## 📬 Contact
 
 Deshayes Julie - julie.deshayes14@gmail.com
 
+---
+
 ## 📝 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
 
 ## 💖 Thanks
 
