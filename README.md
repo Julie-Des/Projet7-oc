@@ -88,8 +88,14 @@ These instructions will get you a copy of the project up and running on your loc
     ```bash
     git clone https://github.com/Julie-Des/Projet7-oc
     ```
+    
+2.  Navigate to the project directory:
 
-2.  Install dependencies:
+    ```bash
+    cd Projet7-oc
+    ```
+
+3.  Install dependencies:
 
     ```bash
     npm install
